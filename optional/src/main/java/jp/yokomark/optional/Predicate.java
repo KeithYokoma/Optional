@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
  * Backport of Predicate interface in Java8.
  * @author KeithYokoma
  */
+@SuppressWarnings("unused") // public APIs
 public interface Predicate<T> {
     boolean test(T value);
     @NonNull Predicate<T> and(@NonNull Predicate<? super T> other);

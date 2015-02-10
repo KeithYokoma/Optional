@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
  * Backport for full implementation of Function interface in Java8.
  * @author KeithYokoma
  */
+@SuppressWarnings("unused") // public APIs
 public abstract class AbsFunction<T, R> implements Function<T, R> {
     public static @NonNull <T> Function<T, T> identity() {
         return new AbsFunction<T, T>() {

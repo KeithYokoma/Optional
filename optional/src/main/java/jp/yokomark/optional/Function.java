@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
  * Backport of Function interface in Java8.
  * @author KeithYokoma
  */
+@SuppressWarnings("unused") // public APIs
 public interface Function<T, R> {
     R apply(T value);
     @NonNull <V> Function<V, R> compose(@NonNull Function<? super V, ? extends T> before);

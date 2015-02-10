@@ -6,8 +6,8 @@ import android.support.annotation.NonNull;
  * * Backport for full implementation of Predicate interface in Java8.
  * @author KeithYokoma
  */
+@SuppressWarnings("unused") // public APIs
 public abstract class AbsPredicate<T> implements Predicate<T> {
-    public static final String TAG = AbsPredicate.class.getSimpleName();
 
     @Override
     public @NonNull Predicate<T> and(@NonNull final Predicate<? super T> other) {

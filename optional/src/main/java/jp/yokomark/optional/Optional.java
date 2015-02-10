@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
  * Backport class of Java8 Optional class.
  * @author KeithYokoma
  */
+@SuppressWarnings("unused") // public APIs
 public class Optional<T> {
     private static final Optional<?> EMPTY = new Optional<>();
     private final T value;
